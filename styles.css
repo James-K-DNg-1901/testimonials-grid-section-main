@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;;
+}
+
+h1 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 1rem 1;
+}
+
+p {
+    color: hsl(0, 0%, 81%);
+    font-weight: 500;
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
+.col-infor {
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin: 0;
+}
+
+.img {
+    width: 2.5rem;
+    float: left;
+    margin: 0 1rem 0 0;
+    border: solid 2px white;
+    border-radius: 30px;
+}
+
+.container {
+    width: 70rem;
+    height: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 17rem 16rem;
+    gap: 2em;
+}
+
+.col-1 {
+    grid-column: span 2;
+    background: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 20rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 9px 5px hsl(0, 0%, 81%);
+}
+
+.col-2 {
+    grid-column: 3;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 9px 5px hsl(0, 0%, 81%);
+}
+
+.col-3 {
+    grid-column: 1;
+    padding: 1rem 2rem;
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 9px 5px hsl(0, 0%, 81%);
+}
+
+.col-4 {
+    grid-column: span 2;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 9px 5px hsl(0, 0%, 81%);
+}
+
+.col-5 {
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 1rem 2rem;
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 9px 5px hsl(0, 0%, 81%);
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 19rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-1 {
+        background-position-x: 11rem;
+    }
+}
